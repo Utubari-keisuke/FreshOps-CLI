@@ -133,7 +133,7 @@ flowchart TD
     
     CheckEmpty -- いいえ --> InitSum[合計損失額 = 0 で初期化]
     InitSum --> LoopLogs[廃棄ログを順次取得]
-    LoopLogs --> SumUp[損失額を累計加算 & ログ行を出力]
+    LoopLogs --> SumUp[損失額を累計加算 ＆ ログ行を出力]
     
     SumUp --> CheckNext{全件集計完了？}
     CheckNext -- いいえ --> LoopLogs
